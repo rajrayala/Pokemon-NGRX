@@ -1,0 +1,12 @@
+<div class="row">
+  <ng-container *ngFor="let pokemon of pokemonContent; let i = index">
+    <div class="col-4 pt-4">
+      <div class="card w-50">
+        <div class="card-body">
+          <div class="card-title">{{pokemon.name}}</div>
+          <a href="javascript:void(0)" (click)="deletePokemon(pokemon.name)">DELETE POKEMON</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
